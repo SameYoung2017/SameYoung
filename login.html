@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+            <meta name="Author" content="登录 － 我的 BLOG - sameyuong.cn  - 专注于技术，源于娱乐" />
+            <title>登录 － 我的 BLOG</title>
+            <!--[if lt IE 8 ]>
+             <script type="text/javascript" charset="utf-8">
+             window.location.href="chs/welcome/UpgradeYourBrowser";
+             </script>
+             <![endif]-->
+            <link rel="stylesheet" href="libraries/PlugIns/dist/css/bootstrap.css?3.2.0"  type="text/css" />
+            <link rel="stylesheet" href="libraries/zh_cn/styleSheets/global.base.css?3.2.0"  type="text/css" />
+            <script src="libraries/PlugIns/jquery.js" type="text/javascript" charset="utf-8"></script>
+            <script src="libraries//PlugIns/jquery-ui-1.10.4.custom.min.js" type="text/javascript" charset="utf-8" ></script>
+            <script src="libraries/PlugIns/address.js" type="text/javascript" charset="utf-8"></script>
+            <script src="libraries/PlugIns/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="libraries/PlugIns/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="libraries/zh_cn/scripts/global.login.js?3.2.0" type="text/javascript" charset="utf-8"></script>
+            </head>
+    <body>
+        <div class="navbar navbar-default navstyle navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">BLOG Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="" title="首页 | BLOG" style="padding:5px;"><!--<img src="libraries/images/logo.jpg" height="40" />--></a>
+        </div>
+        <hr class="nav-hr visible-xs">
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="help-nav hidden-md hidden-sm"><a href="#" >娱乐</a></li>
+                <li><p class="nav-lr hidden-xs hidden-sm">|</p></li>
+                <li class="blog-nav hidden-sm"><a href="blog.html">博客</a></li>
+                <li><p class="nav-lr hidden-xs hidden-sm">|</p></li>
+                <li><a href="#/login">登录</a></li>
+                <li><p class="nav-lr hidden-xs hidden-sm">|</p></li>
+                <li><a href="#/signup" class="btn btn-primary navbar-btn" style="font-size: 14px;color:#fff; background: #1b6a83;padding:6px 15px;margin-left:10px;margin-right:10px;">注册</a></li>            
+            </ul>
+        </div>
+    </div>
+</div>        <div class="container signin">
+           
+            <div class="row">
+                <div class="login-form col-lg-6 col-md-8 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-1" id="login" style="display:none;">
+                    <form class="form-horizontal" role="form" id="login-form">
+                    <div class="row">
+                        <div class="login-para">
+                            <div class="col-xs-2 col-sm-1 login-icon text-center"><img src="libraries/images/login-email.png" /></div>
+                            <div class="col-xs-10 col-sm-11 login-input"><input type="email" class="form-control" name="email" placeholder="邮箱" /></div>
+                         </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class="login-para">
+                            <div class="col-xs-2 col-sm-1 login-icon text-center"><img src="libraries/images/login-password.png" /></div>
+                            <div class="col-xs-10 col-sm-11 login-input"><input type="password" class="form-control" name="password" placeholder="密码" /></div>
+                        </div>
+                    </div>
+                    <div class="row visible-xs">
+                        <div class="col-xs-12 text-right">登录
+                            <a href="#/forgot">忘记密码？</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="login-btn login-signin">
+                            <div class="col-sm-3 hidden-xs"><p class="options"><a href="#/forgot">忘记密码？</a></p></div>
+                            <div class="col-sm-6 hidden-xs"><p class="options">没有账户？  <a href="#/signup" >注册 BLOG 账户</a></p></div>
+                            <div class="col-sm-3"><input type="submit" class="btn btn-primary btn-block btn-lg" value="登录"></div>
+                        </div>
+                    </div>
+                    <div class="row visible-xs">
+                        <div class="col-xs-12">
+                            <p class="options text-center">没有账户？ <a href="#/signup">免费注册 BLOG 账户</a></p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                
+                
+                <div class="login-form col-lg-6 col-md-8 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-1" id="signup" style="display:none;">
+                    <form class="form-horizontal" role="form" id="signup-form">
+                    <div class="row">
+                        <div class="login-h-para">
+                            <div class="col-xs-7 col-sm-7  col-md-7 col-lg-7" style="margin-left:-15px; margin-right:0px;padding-right: 0px;">
+                                <div class="login-para">
+                                <div class="col-xs-3 col-sm-2 login-icon text-center"><img src="libraries/images/login-user.png" /></div>
+                                <div class="col-xs-9 col-sm-10 login-input"><input type="text" name="firstname" class="form-control" style="padding-left: 8px;" placeholder="姓氏" /></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5  col-md-5 col-lg-5" style="margin-right:0px; margin-left:15px;padding:0px; padding-right:-15px;">
+                                <div class="login-para">
+                                    <input type="text" class="form-control" name="lastname" placeholder="名字">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="login-para">
+                            <div class="col-xs-2 col-sm-1 login-icon text-center"><img src="libraries/images/login-email.png" /></div>
+                            <div class="col-xs-10 col-sm-11 login-input"><input type="email" class="form-control" name="email" placeholder="邮箱"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="login-para">
+                            <div class="col-xs-2 col-sm-1 login-icon text-center"><img src="libraries/images/login-password.png" /></div>
+                            <div class="col-xs-10 col-sm-11 login-input"><input type="password" class="form-control" name="password" placeholder="密码" /></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="login-btn login-signin">
+                            <div class="col-sm-9 hidden-xs"><p class="options">已有账户？  <a href="#/login">立即登录页面</a></p></div>
+                            <div class="col-sm-3"><input type="submit" class="btn btn-success btn-block btn-lg" value="注册账户"></div>
+                        </div>
+                    </div>
+                    <div class="row visible-xs">
+                        <div class="col-xs-12">
+                            <p class="options text-center">已有账户？  <a href="#/login">立即登录页面</a></p>
+                        </div>
+                    </div>
+                    
+                    </form>
+
+                </div>
+                
+                <div class="login-form col-lg-6 col-md-8 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-1" id="forgot" style="display:none;">
+                    <form class="form-horizontal" role="form" id="forgot-form">
+                        <div class="row">
+                            <div class="login-para">
+                                <div class="col-xs-2 col-sm-1 login-icon text-center"><img src="libraries/images/login-email.png" style="margin-top:18px;"></div>
+                                <div class="col-xs-10 col-sm-11 login-input"><input type="email" name="email" class="form-control" placeholder="邮箱" /></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="login-btn login-signin">
+                                <div class="col-sm-3 hidden-xs"><p class="options"><a href="#/login">跳转至登录</a></p></div>
+                                <div class="col-sm-6 hidden-xs"><p class="options">没有账户？  <a href="#/signup">注册 BLOG 账户</a></p></div>
+                                <div class="col-sm-3"><input type="submit" class="btn btn-danger btn-block btn-lg " value="重置密码"></div>
+                            </div>
+                        </div>
+                        <div class="row visible-xs">
+                            <div class="col-xs-5">
+                                <p class="options text-left"><a href="#/login">跳转至登录</a></p>
+                            </div>
+                            <div class="col-xs-7">
+                                <p class="options text-right"> <a href="#/signup">注册 BLOG 账户</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+         <div class="login-bg"></div>
+    </body>
+</html>

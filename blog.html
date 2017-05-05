@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+        <meta name="Author" content="博客 － BLOG" />
+        <title>博客</title>
+        <!--[if lt IE 8 ]>
+         <script type="text/javascript" charset="utf-8">
+         window.location.href="chs/welcome/UpgradeYourBrowser";
+         </script>
+         <![endif]-->
+        <link rel="stylesheet" href="libraries/PlugIns/dist/css/bootstrap.css"  type="text/css" />
+        <link rel="stylesheet" href="libraries/zh_cn/styleSheets/global.base.css?3.2.0"  type="text/css" />
+
+        <script src="libraries/PlugIns/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="libraries/PlugIns/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+    </head>
+    <body>
+        <div class="navbar navbar-default navstyle navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">BLOG Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="" title="首页 | BLOG" style="padding:5px;"><!--<img src="libraries/v2/images/logo.svg" height="40" />--></a>
+        </div>
+        <hr class="nav-hr visible-xs">
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="help-nav hidden-md hidden-sm"><a href="#" >娱乐</a></li>
+                <li><p class="nav-lr hidden-xs hidden-sm">|</p></li>
+                <li class="blog-nav hidden-sm"><a href="blog.html">博客</a></li>
+                <li><p class="nav-lr hidden-xs hidden-sm">|</p></li>
+                 <li><a href="login.html">登录</a></li>
+                 <li><p class="nav-lr hidden-xs hidden-sm">|</p></li>
+                 <li><a href="login.html#/signup" class="btn btn-primary navbar-btn" style="font-size: 14px;color:#fff; background: #007ffc;padding:6px 15px;margin-left:10px;margin-right:10px;">注册</a></li>            
+                 </ul>
+        </div>
+    </div>
+</div>        <div id="contents-container" class="container" >
+            
+            <div class="row">
+                                <div  class="col-xs-12  col-lg-9 col-sm-12 col-md-9">
+                    <div class="row" style="margin-top:39px;">
+                        <a href="javascript:void(0)" class="btn btn-primary  pull-left hidden-lg hidden-md" id="docmentMenu" style="margin-top:10px; padding-bottom:10px;">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </a>
+                        <ol class="breadcrumb pull-left">
+                            <li class="active"></li>
+                        </ol>
+                        <div class="clearfix"></div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 " id="blog">
+                            <div id="blogtext">
+                                <div  class='timeLine'></div>
+                                                                                                                                
+                                  <div class='timeCircleOutside'>
+                                    <div class='timeCircleInside'><p class='timeCircleMonth'>3</p>2017</div>
+                                </div>
+                                                                
+                                                                
+                                
+                                <div class="articleField">
+                                    <p class='blogTitle'><a style="color:#000" href="blogXX.html">Android高级控件的使用</a></p>
+                                    <span class='authorAndCTime'>杨杰:<span style='font-size:12px;'>发表于</span>2017-03-20</span></br>
+                                    <div class='blogContent'><p>
+                                        <AutoCompleteTextView 
+         android:id="@+id/autotv"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+          />
+
+           AutoCompleteTextView autotv =(AutoCompleteTextView)this.findViewById(R.id.autotv);
+
+        autotv.setAdapter(new ArrayAdapter<String>
+    (this,android.R.layout.simple_list_item_1,getdata()));
+
+private String[] getdata(){
+        String []str=new String[]{"1111","121","113","14"};
+        return str;
+    }
+                                    </p>
+                                </div>
+                                    <div style="margin-top:10px;"><span><a href='blogXX.html'>阅读全文</a></span><span style='margin-left:30px;'><a href='blogXX.html#comments'>0条评论</a></span></div>
+                                </div>
+                                                                                                                                
+                                <div class='timeCircleOutside'>
+                                    <div class='timeCircleInside'><p class='timeCircleMonth'>2</p>2017</div>
+                                </div>
+                                                                                            
+                                <div class="articleField">
+                                    <p class='blogTitle'><a style="color:#000" href="#">  
+                                    nodejs微信公众号开发第一步(接入指南)--wechat模块
+                                    </a></p>
+                                    <span class='authorAndCTime'>云哥:<span style='font-size:12px;'>发表于</span>2017-01-17</span></br>
+                                    <div class='blogContent'><p>
+                                       用模块接入微信就非常简单了.只用配置好参数,逻辑大神都写好了,站在巨人的肩膀上的感觉就是不错大笑本文测试用的是微信测试号.
+                                       -- express生成项目框架
+                                       express命令行创建项目 :点击这里,
+                                       创建项目 : wechat_express.
+                                       -- 安装模块
+                                       wechat
+                                       安装 npm install wechat
+                                       -- 改造项目
+                                       </p>
+                                
+                                </div>
+
+                                    <div style="margin-top:10px;"><span><a href='#'>阅读全文</a></span><span style='margin-left:30px;'><a href='#'>0条评论</a></span></div>
+                                </div>
+
+                                 <div class='timeCircleOutside'>
+                                    <div class='timeCircleInside'><p class='timeCircleMonth'>1</p>2017</div>
+                                </div>
+                                                                                            
+                                <div class="articleField">
+                                    <p class='blogTitle'><a style="color:#000" href="#"> html5拖放和阻止系统默认的操作与canvas标签及应用
+                                    </a></p>
+                                    <span class='authorAndCTime'>小冯:<span style='font-size:12px;'>发表于</span>2017-01-17</span></br>
+                                    <div class='blogContent'><p>
+                                        onedragstart：调用了一个函数，drag（event），它规定了被拖动的数据设置拖动数据：setData（）：设置被拖数据的数据类型和值放入位置：ondragover：事件规定在何处放置被拖动的数据放置：ondrop:当放置被拖动数据是，会发生drop事件——.preventDefault(); 阻止系统默认的操作
+                                
+                                </div>
+
+                                    <div style="margin-top:10px;"><span><a href='#'>阅读全文</a></span><span style='margin-left:30px;'><a href='#'>0条评论</a></span></div>
+                                </div>
+                                                                                                                                
+                                  <div class='timeCircleOutside' style='opacity:0'>
+                                    <div class='timeCircleInside'></div>
+                                </div>
+                                                                
+                                                                
+                                
+                                <div class="articleField">
+                                    <p class='blogTitle'><a style="color:#000"href="#"> Hibernate旅程（九）Hibernate缓存机制--查询缓存</a></p>
+                                    <span class='authorAndCTime'>朱玉:<span style='font-size:12px;'>发表于</span>2017-01-11</span></br>
+                                    <div class='blogContent'>
+                                    <p>hibernate查询缓存我们介绍了Hibernate一级缓存，二级缓存。而hibernate二级缓存时针对Id查询的缓存策略，对于条件查询则毫无作用。因此hibernate提供了针对条件查询的QueryCache（查询策略）。下面来看session控制的查询缓存。一、查询缓存配置1、          在hibernate.cfg.xml中加入查询缓存的策略，<propertyname="hibernate.cache.use_query_cache">true</property>      启用查询缓存的策略，默认是false。二、关闭二级缓存，采用query.list()查询普通属性代码如下所示。
+                                    </p>
+                                    </div>
+                                    <div style="margin-top:10px;"><span><a href='#'>阅读全文</a></span><span style='margin-left:30px;'><a href='#'>1条评论</a></span></div>
+                                </div>
+                                                                                                                                
+                                <div class='timeCircleOutside'>
+                                    <div class='timeCircleInside'><p class='timeCircleMonth'>12</p>2016</div>
+                                </div>
+                                                                
+                                                                
+                                
+                                <div class="articleField">
+                                    <p class='blogTitle'><a style="color:#000" href="#">深入理解MongoDB（一）Linux下配置MongoDB全攻略</a></p>
+                                    <span class='authorAndCTime'>王立:<span style='font-size:12px;'>发表于</span>2016-12-29</span></br>
+                                    <div class='blogContent'><p>一 MongoDB简介</p>
+ 
+<p>MongoDB是一个高性能，开源，无模式的文档型数据库，是当前NoSql数据库中比较热门的一种。它在许多场景下可用于替代传统的关系型数据<</p>库或键/值存储方式，Mongo使用C++开发。Mongo的官方网站地址是：http://www.mongodb.org/，读者可以在此获得更详细的信息。</p>
+ 
+<p>特点：</p>
+<p>它的特点是高性能、易部署、易使用，存储数据非常方便。主要功能特性有：</p>
+<p>面向集合存储，易存储对象类型的数据。</p>
+<p>模式自由。</p>
+<p>支持动态查询。</p>
+<p>支持完全索引，包含内部对象。</p>
+<p>支持查询。</p>
+<p>支持复制和故障恢复</p>
+<p>使用高效的二进制数据存储，包括大型对象（如视频等）。</p>
+<p>自动处理碎片，以支持云计算层次的扩展性。</p>
+<p>支持RUBY，PYTHON，JAVA，C++，PHP，C#等多种语言。</p>
+<p>文件存储格式为BSON（一种JSON的扩展）。</p>
+<p>可通过网络访问。</p>
+</div>
+                                    <div style="margin-top:10px;"><span><a href='#'>阅读全文</a></span><span style='margin-left:30px;'><a href='#'>0条评论</a></span></div>
+                                </div>
+                                                                   
+                                                                                                
+                            </div>
+                            <!--<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 " id="comments">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-xs-9 col-lg-3 col-sm-6 col-md-3 sidebar">
+                        <div class="search_form">
+                            <input type="text" name="search" class="search" placeholder="搜索">
+                                <span class="searching"></span>
+                                <a class="reset" href="javascript:void(0)">reset</a>
+                                </div>
+                        <div class='authorField'>
+                            
+                            
+                            <p class='newBlog'>最新文章</p>
+                            <div class='newBlogField'>
+                             <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='blogXX.html'>Android高级控件的使用</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>nodejs微信公众号开发第一步(接入指南)--wechat模块</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>html5拖放和阻止系统默认的操作与canvas标签及应用</a></div>
+                             <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>
+                            Hibernate旅程（九）Hibernate缓存机制--查询缓存</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>深入理解MongoDB（一）Linux下配置MongoDB全攻略</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>Android高级控件的使用</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>nodejs微信公众号开发第一步(接入指南)--wechat模块</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>html5拖放和阻止系统默认的操作与canvas标签及应用</a></div>
+                             <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>
+                            Hibernate旅程（九）Hibernate缓存机制--查询缓存</a></div>
+                            <div style="margin-left:10px;margin-top:5px;font-size:14px;"><a style="color:#666" href='#'>深入理解MongoDB（一）Linux下配置MongoDB全攻略</a></div>
+
+                                                                                            </div>
+                            <div style="margin-top:20px;">
+                                <p class='newBlog'>主要作者</p>
+                                    <div style='height:80px'>
+                                    <a href='#'><img src='libraries/images/comments.jpg' style="width:60px;height:60px;float:left;border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px;-o-border-radius:30px;-khtml-border-radius:30px;"></a>
+                                    <a href='#' style="line-height:20px;color:#999;margin:5px;margin-left:10px;font-size:14px;padding:10px 5px;">李云</a><br/>
+                                   <a href='#'> <span style="line-height:20px;color:#999;margin:5px;margin-left:10px;font-size:10px;padding:10px 5px;">博文：27篇</span></a><br/>
+                                </div>
+                                   <div style='height:80px'>
+                                    <a href='#'><img src='libraries/images/comments.jpg' style="width:60px;height:60px;float:left;border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px;-o-border-radius:30px;-khtml-border-radius:30px;"></a>
+                                    <a href='#' style="line-height:20px;color:#999;margin:5px;margin-left:10px;font-size:14px;padding:10px 5px;">杨杰</a><br/>
+                                   <a href='#'> <span style="line-height:20px;color:#999;margin:5px;margin-left:10px;font-size:10px;padding:10px 5px;">博文：10篇</span></a><br/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <ul class="nav bs-searchnav" style="display: none;"></ul>
+                    </div>
+            </div>
+        </div>
+        
+
+<div class="sections sections-buttom-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-xs-6 text-center">
+                <a href="http://www.gusucode.com" class="btn btn-default btn-block">免费源码</a>
+                <a href="https://www.proginn.com" class="btn btn-default btn-child btn-block">程序员客栈</a>
+                <a href="https://www.idaima.com" class="btn btn-default btn-child btn-block">爱代码社区</a>
+            </div>
+            
+            <div class="col-lg-3 col-sm-3 col-xs-6 text-center">
+                <a href="http://www.imooc.com/" class="btn btn-default btn-block">慕课网</a>
+                <a href="http://www.jikexueyuan.com/" class="btn btn-default btn-child btn-block">极客学院</a>
+                <a href="https://www.shiyanlou.com/" class="btn btn-default btn-child btn-block">实验楼</a>
+                
+            </div>
+            <div class="clearfix visible-xs"></div>
+            <div class="col-lg-3 col-sm-3 col-xs-6 text-center">
+                <a href="http://www.91tiansheng.com" class="btn btn-default btn-block">快速备案</a>
+                <a href="http://www.thinksaas.cn" class="btn btn-default btn-child btn-block">开源社区</a>
+                <a href="http://www.codeceo.com/" class="btn btn-default btn-child btn-block">码农网</a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6 text-center">
+                <a href="http://www.toutiao.com/" class="btn btn-default btn-block">今日头条</a>
+                <a href="http://weibo.com/" class="btn btn-default btn-child btn-block" target='_blank'>新浪微博</a>
+                <a href="https://mp.weixin.qq.com/" class="btn btn-default btn-child btn-block">微信公众平台</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="sections sections-buttom-rights">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 rights-text">
+                <p>sameyoung. 保留所有权利</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 icp-text">
+                <p>000000000号-1</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="nav-masker"></div>
+    </body>
+</html>
+
