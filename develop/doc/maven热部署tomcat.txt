@@ -1,0 +1,69 @@
+maven工程部署:
+
+创建基本目录结构(main下创建一个java文件,src下创建与main同级的java文件，创建好的test文件下创建java文件，用于存放测试代码
+
+编译后存放的目标:target/classes
+
+
+maven热部署:
+
+
+
+
+找到tomcat安装目录 --> conf --> tomcat-users.xml --> 
+
+修改配置（指定tomcat账号密码,localhost:8080/manager/html）
+给tomcat配置账号:
+
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <user username="admin" password="123" roles="manager-gui,manager-script"/>
+
+
+
+将项目部署到tomcat中
+
+(配置多个tomcat)模拟文件服务器
+
+步骤:
+
+改tomcat端口号:
+找到tomcat安装目录 --> conf --> server.xml
+改三个地方：
+1、<Server port=""中的数字改为原数字加一
+2、<Connector port=""中的数字改为未被占用的端口
+3、<Connector port=""中的数字改为原数字加一
+
+将本机配置好不同端口号的tomcat分别在pom.xml中进行插件声明(中央仓库坐标)
+
+启动本机中在pom.xml中声明好的tomcat
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8889/manager/text</url>
+					<!-- 首页直接显示网页内容 -->
+					<path>/</path>
+					<server>tomcatserver</server>
+					<username>admin</username>
+					<password>123</password>
+				</configuration>
+			</plugin>
+		</plugins>
+
+部署指令:run as --> maven builder --> tomcat7:redeploy
+redeploy:表示每次都重新部署
+
+配置<path>/</path>
+项目访问路径:http://localhost:8889/
+未配置<path>/</path>
+项目访问路径:http://localhost:8889/项目名
+
+
+
+
+
+
